@@ -8,6 +8,7 @@
     "start:react": "react-scripts start",
     "start-and-test": "run-p start-silent test ",
     "build": "react-scripts build",
+    "lint": "esw --watch --clear",
     "test": "react-scripts test --noStackTrace",
     "test-all": "react-scripts test --watchAll=false --noStackTrace",
     "test-related": "react-scripts test --watchAll=false --noStackTrace --findRelatedTests",
@@ -48,6 +49,7 @@
     "@testing-library/user-event": "^13.5.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
+    "json-server": "^0.17.0",
     "node-sass": "^7.0.1",
     "npm-run-all": "^4.1.5",
     "react": "^17.0.2",
@@ -60,7 +62,8 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "husky": "^7.0.4",
+    "eslint-watch": "^8.0.0",
+    "husky": "4.2",
     "lint-staged": "^12.3.6",
     "redux-devtools-extension": "^2.13.9"
   }
