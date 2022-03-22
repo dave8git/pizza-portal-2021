@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './MyComponent.scss';
+//import styles from './MyComponent.scss';
 import PageNav from '../PageNav/PageNav';
 
 const MainLayout = (props) => (
@@ -11,7 +11,7 @@ const MainLayout = (props) => (
 );
 
 MainLayout.propTypes = {
-    children: PropTypes.node,
+  children: PropTypes.node,
 };
 
 export default MainLayout;

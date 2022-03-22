@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './PageNav.module.scss';
+import {NavLink} from 'react-router-dom';
 
 const PageNav = () => (
   <nav className={styles.component}>

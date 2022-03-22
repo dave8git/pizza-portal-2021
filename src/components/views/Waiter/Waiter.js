@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Waiter.module.scss';
+import { Link } from 'react-router-dom';
 
 const Waiter = (props) => (
   <div className={styles.component}>
