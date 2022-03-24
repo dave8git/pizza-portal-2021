@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 //import styles from './MyComponent.scss';
 import PageNav from '../PageNav/PageNav';
-import AppBar from '@material-ui/material/AppBar';
-import Box from '@material-ui/material/Box';
-import Toolbar from '@material-ui/material/Toolbar';
+import AppBar from '@material-ui/core/AppBar';
+import Box from '@material-ui/core/Box';
+import Toolbar from '@material-ui/core/Toolbar';
 
 const MainLayout = (props) => (
   <div className="MainLayout">
