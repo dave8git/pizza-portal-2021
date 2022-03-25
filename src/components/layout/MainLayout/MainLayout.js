@@ -5,16 +5,21 @@ import PageNav from '../PageNav/PageNav';
 import AppBar from '@material-ui/core/AppBar';
 import Box from '@material-ui/core/Box';
 import Toolbar from '@material-ui/core/Toolbar';
+import Container from '@material-ui/core/Container';
 
 const MainLayout = (props) => (
   <div className="MainLayout">
     <AppBar>
-      <Toolbar>
-        <PageNav />
-      </Toolbar>
+      <Container maxWidth="lg">
+        <Toolbar disableGutters>
+          <PageNav />
+        </Toolbar>
+      </Container>
     </AppBar>
-    
-    {props.children}
+    <Container maxWidth='lg'>
+      <Toolbar />
+      {props.children}
+    </Container>
   </div>
 );
 
