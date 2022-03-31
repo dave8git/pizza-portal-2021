@@ -10,7 +10,7 @@
     "build": "react-scripts build",
     "lint": "esw --watch --clear",
     "test": "react-scripts test --noStackTrace",
-    "server": "json-server public/db/app.json --routes routes.json",
+    "server": "json-server --port 3131 --no-cors --delay 250 --watch public/db/app.json --routes routes.json",
     "test-all": "react-scripts test --watchAll=false --noStackTrace",
     "test-related": "react-scripts test --watchAll=false --noStackTrace --findRelatedTests",
     "eject": "react-scripts eject"
