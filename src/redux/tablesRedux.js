@@ -65,8 +65,8 @@ export const setTableStatus = (payload) => {
         status: payload.status,
       }) // post vs put - jako dobrą praktykę postem wysyłamy cały obiekt który mamy w bazie, a put tylko to co się zmienia (resztę robi backend)
       .then(res => {
-        console.log(res.data);
-        //dispatch(fetchSuccess(res.data));
+        //console.log(res.data);
+        dispatch(tableStatus(res.data));
       })
       .catch(err => {
         dispatch(fetchError(err.message || true));
@@ -105,6 +105,11 @@ export default function reducer(statePart = [], action = {}) {
           error: action.payload,
         },
       };
+    }
+    case TABLE_STATUS: {
+      console.log('statePart', statePart);
+      console.log('statePart.data', statePart.data); 
+      console.log('action.payload', action.payload);
     }
     default:
       return statePart;
