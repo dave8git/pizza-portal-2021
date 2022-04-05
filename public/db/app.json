@@ -1,15 +1,15 @@
 {
   "tables": [
     {
-      "status": "thinking",
+      "status": "ordered",
       "id": "1"
     },
     {
-      "status": "free",
+      "status": "ordered",
       "id": "2"
     },
     {
-      "status": "thinking",
+      "status": "prepared",
       "id": "3"
     },
     {

@@ -110,6 +110,17 @@ export default function reducer(statePart = [], action = {}) {
       console.log('statePart', statePart);
       console.log('statePart.data', statePart.data); 
       console.log('action.payload', action.payload);
+      debugger; // eslint-disable-line no-debugger
+      return {
+        ...statePart,
+      
+      data: statePart.data.map((table) => {
+        if (table.id === action.payload.id) {
+          return action.payload;
+        } else {
+          return table;
+        }}),
+      }
     }
     default:
       return statePart;
